@@ -169,6 +169,10 @@ app.get('/post/:id', async (req, res) => {
     res.json(postDoc)
 });
 
+app.get('/', async (req, res) => {
+    res.send('Hello World!')
+});
+
 app.listen(4000, () => {
     console.log("Server listening on port 4000")
 });
