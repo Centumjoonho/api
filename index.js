@@ -169,7 +169,7 @@ app.get('/post/:id', async (req, res) => {
     res.json(postDoc)
 });
 
-app.get('/', async (req, res) => {
+app.get('/', (req, res) => {
     res.send('Hello World!')
 });
 
